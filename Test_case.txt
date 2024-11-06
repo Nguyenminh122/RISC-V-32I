@@ -1,0 +1,64 @@
+      addi x9, x0, 96
+      addi x10, x0, 32
+      addi x18, x0, 68
+      addi x25, x0, 4
+      addi x19, x0, 36
+      addi x30, x0, 20
+      addi x8, x0, 92
+      addi x22, x0, 80
+      addi x24, x0, 88
+      addi x21, x0, 0
+      addi x12, x0, 80
+      addi x2, x0, 40
+      addi x13, x0, 12
+      addi x1, x0, 4
+      addi x3, x0, 12
+      addi x6, x0, 76
+      addi x11, x0, 0
+      addi x5, x0, 72
+      addi x14, x0, 2047
+      addi x4, x0, 1436
+      addi x7, x0, 96
+      addi x14, x0, 351
+      addi x15, x0, -1934
+      addi x16, x0, -1224
+      addi x17, x0, -1964
+      addi x20, x0, -1945
+      addi x23, x0, -1300
+      addi x26, x0, 80
+      addi x27, x0, -1600
+      addi x28, x0, -180
+      addi x29, x0, -766
+      addi x31, x0, -770
+      lui x23, 403 
+      sw x13, 44(x10)
+      sra x26, x23, x22 
+      lw x24, 48(x24)
+      lw x8, 52(x22)
+      lui x15, 530
+      lb x21, 56(x10)
+      lui x9, 1143
+      lui x30, 328
+      auipc x8, 753
+      sw x9, 60(x25)
+      lw x30, 64(x30)
+      lui x8, 1017
+      sw x9, 68(x9)
+      lui x20, 815
+      lw x6, 72(x25)
+      auipc x20, 1094
+      jal x2, ID
+      auipc x25, 256
+      lui x8, 1870
+      lw x18, 80(x19)
+      sw x1, 84(x18)
+      bltu x17, x15, ID
+      bge x4, x14, ID2
+      lw x21, 88(x21)
+      lw x11, 92(x2)
+ID:
+      sra x28, x2, x1
+      addi x1, x0, 232
+      jalr x4, x1,12
+ID2:
+	 lw x19, 100(x21)
