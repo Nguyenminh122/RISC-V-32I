@@ -10,11 +10,7 @@ module test_riscv();
         .rst(rst),
         .pc_reg(pc_reg)
     );
-    
-    // integer i, j;
     initial begin
-            //$readmemb("F:\NCKH\NCKH_2022\Process_1\Output_Assembler\binary_out.txt", TOP_module.instruction_fetch.INSTRUCTION_MEMORY_MODULE.codeMemory);
-            //$readmemh("binary_1.txt", risc_v_instance.instruction_fetch.INSTRUCTION_MEMORY_MODULE.codeMemory);
             clk = 0; rst = 1;
             #20 rst = 0;
             #10000 $finish;
