@@ -15,22 +15,6 @@ module registers
          Registers[i] = 32'b0;
       end
    end
-  
-  
-//  always@(posedge clk) begin
-//    if(reg_write)  // reg 0 luon = 0
-//      Registers[write_reg] <= write_data;
-//  end
-  
-  
-//  assign read_data1 = (read_reg1 != 5'b0) ? //ko xai reg x0 = 0,
-//                      (((reg_write == 1'b1)&&(read_reg1 == write_reg)) ? // neu doc va ghi cung 1 reg thi g/tri doc = g/tri ghi
-//                      write_data : Registers[read_reg1]) : 32'b0;
-                      
-//  assign read_data2 = (read_reg2 != 5'b0) ? //ko xai reg x0 = 0
-//                      (((reg_write == 1'b1)&&(read_reg2 == write_reg)) ? 
-//                      write_data : Registers[read_reg2]) : 32'b0;
-
     always@(posedge clk) begin
             if(reg_write)
                 Registers[write_reg] <= write_data;
