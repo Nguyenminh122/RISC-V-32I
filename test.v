@@ -10,12 +10,12 @@ module test_riscv();
         .rst(rst),
         .pc_reg(pc_reg)
     );
+    
     initial begin
-            clk = 0; rst = 1;
+    $readmemh("/home/minh/Documents/RISCV-32I_Sinngcycle/RISC-V-32I/data_mem.mem", instruction_memory.codeMemory);
+                clk = 0; rst = 1;
             #20 rst = 0;
-            #10000 $finish;
+            #1000 $finish;
     end
-    always #10 clk = ~clk;    
+    always #5 clk = ~clk;    
 endmodule
-
-
